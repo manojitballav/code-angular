@@ -1,0 +1,19 @@
+<!--Creating AJS modules-->
+<!DOCTYPE html>
+<html ng-app="notesApp">
+    <head>
+        <title>Hello World</title>
+    </head>
+    <body>
+        Hello {{1+1}}nd time from AJS
+        <script src="../assets/angular.js"></script>
+        <!--Defining a module in AJS with no arguments-->
+        <script type="text/javascript">angular.module('notesApp',[])
+        /*creating a controller*/
+        .controller('mainCtrl',[function() {
+            //Contol specific code goes here
+            console.log('mainCtrl has been created');
+        }]);</script>
+    </body>
+    
+</html>

@@ -1,0 +1,11 @@
+<!--Angular JS Hello World-->
+<!DOCTYPE html>
+<html>
+    <body ng-app> <!--Bootstrapping Angular JS to the body tag-->
+        <!-- "ng-model" directive is used with input fields whenever we want the user to enter any data and get acccess to the value in Javascript, here we tell AJS to store the value that the user types into this field in a variable called name-->
+        <input type="text" ng-model="name" placeholder="Enter your name">
+        <!--"ng-bind" and "{{}}" are interchnageable, this puts up the value of the variable name inside the tag and keeping it upto date if it changes-->
+        <h1>Hello <span ng-bind="name"></span></h1>
+        <script src="../assets/angular.js"></script>
+    </body>
+</html>
